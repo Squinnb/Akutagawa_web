@@ -1,0 +1,23 @@
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 40vw;
+}
+
+#reviewsContainer {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.reviewItemText {
+    font-size: .8em;
+}
+.reviewImageNameContainer {
+    display: flex;
+    flex-direction: row;
+}
+.reviewItemName {
+    margin-bottom: .2rem;
+    margin-left: .25rem;
+}

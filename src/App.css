@@ -1,0 +1,195 @@
+body {
+  background-color: rgb(223, 228, 233);
+}
+.listContainer {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.flex {
+  display: flex;
+}
+.sameLine {
+  display: inline;
+}
+.slRight {
+  margin-left: auto;
+}
+.txtL {
+  text-align: left;
+  margin: 0.1rem;
+}
+.titleBtn {
+  background: none;
+  border: 0.03rem solid rgb(232, 217, 213);
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.1rem;
+  transition: filter 0.3s;
+}
+.titleBtn:hover {
+  background-color: rgb(232, 217, 213);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-left: 15rem;
+  padding: 1rem;
+}
+/* router-demo is loc of the new box-shadow */
+table {
+  border: rgb(225, 230, 233);
+}
+th,
+td {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.winnersDisp {
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  border: 0.13rem solid black;
+  border-radius: 5px;
+  background-image: url("./bgPhotos/paper.png");
+  box-shadow: 10px 10px 0 black;
+}
+.aboutDisp {
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 0.13rem solid black;
+  border-radius: 5px;
+  background-image: url("./bgPhotos/paper.png");
+  box-shadow: 10px 10px 0 black;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.detailBox {
+  margin: 0.5rem;
+  padding: 1.2rem;
+  width: 57vw;
+  border: 0.13rem solid black;
+  border-radius: 5px;
+  background-image: url("./bgPhotos/paper.png");
+  box-shadow: 10px 10px 0 black;
+}
+
+.toggleBtnBox {
+  text-align: center;
+  margin-left: 1.5rem;
+}
+.toggleBtn {
+  font-size: 0.4rem;
+  background-color: rgb(246, 113, 113);
+  border-radius: 5px 5px 5px 5px;
+  margin: 0.2rem;
+  transition: filter 0.3s;
+}
+
+.toggleBtn:hover {
+  filter: grayscale(100%) opacity(2);
+}
+
+.About {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+.nl {
+  text-decoration: none;
+  color: black;
+}
+.aboutPic {
+  width: 15vw;
+}
+.bookPhoto {
+  height: 30vh;
+}
+.setsumei {
+  font-size: 0.8rem;
+}
+.setsumei2 {
+  font-size: 0.7rem;
+}
+.wd {
+  align-self: flex-end;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  .aboutPic {
+    width: 15vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutPic {
+    width: 25vw;
+  }
+}
+
+.toggleSignInUp {
+  border-style: none;
+}
+.authContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.authLink {
+  border: none;
+  cursor: pointer;
+  /* margin: 0 auto; */
+}
+.authLink:hover {
+  color: rgba(123, 123, 123, 0.899);
+}
+
+.authForm {
+  padding: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 0.13rem solid black;
+  border-radius: 5px;
+  background-image: url("./bgPhotos/paper.png");
+  box-shadow: 10px 10px 0 black;
+}
+
+.authForm input {
+  width: 35vw;
+  height: 4vh;
+}
+
+.authItem{
+  margin: .2rem;
+}
+.authBtn {
+  cursor: pointer;
+}
+
+.authBtn:active{
+  margin-bottom: .4rem;
+  border: 0.1rem solid black;
+  border-radius: 3px;
+  box-shadow: 4px 4px 0 black;
+}

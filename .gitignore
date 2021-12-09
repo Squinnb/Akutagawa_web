@@ -1,0 +1,4 @@
+# the obvious stuff, prob need to add more
+.env
+node_modules/
+.DS_Store
