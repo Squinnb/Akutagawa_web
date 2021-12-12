@@ -1,5 +1,5 @@
 import {useState} from 'react'
-
+import '../../details.css'
 export default function ReviewForm() {
 
     let [reviewTitle, setReviewTitle] = useState("")
@@ -19,10 +19,10 @@ export default function ReviewForm() {
     }
 
     return (
-        <form action="submit" onSubmit={(e) => sendReview(e)} id='reviewForm'>
-            <input type="text" name='reviewTitle' onChange={(e) => handleChange(e)} placeholder='Review Title' />
-            <textarea name="reviewText"  onChange={(e) => handleChange(e)}></textarea>
-            <button>I think I want to be a backend dev</button>
+        <form action="submit" onSubmit={(e) => sendReview(e)} className='review_form'>
+            <input className='review_form_title' type="text" name='reviewTitle' onChange={(e) => handleChange(e)} placeholder='Review Title' />
+            <textarea className='review_form_text' name="reviewText"  onChange={(e) => handleChange(e)}></textarea>
+            <button className='review_form_btn'>I think I want to be a backend dev</button>
         </form>
     )
 }

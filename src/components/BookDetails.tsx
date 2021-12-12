@@ -21,7 +21,7 @@ const BookDetails: React.FC<Props> =(props) => {
         console.log("MFers be fetching data")
 
         return () => {
-            console.log('frick gotta clean up')
+            console.log('gotta clean up')
         }
     }, [])
 

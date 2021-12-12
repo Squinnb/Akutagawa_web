@@ -1,13 +1,26 @@
-#reviewForm {
+.review_form {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
-    width: 40vw;
+    width: 40vw;   
 }
 
-#reviewsContainer {
+.review {
     margin-top: 3rem;
     margin-left: 1rem;
+}
+
+.review_item {
+    margin-top: 1rem;
+}
+.review_form_title {
+    margin-bottom: .2rem;
+}
+.review_form_text {
+    margin-bottom: .2rem;
+}
+.review_form_btn {
+    margin-bottom: .2rem;
 }
 
 .reviewItemText {
