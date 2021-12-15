@@ -31,7 +31,6 @@ export const AuthProvider = ({children}) => {
             if(resp.status === 200) {
                 console.log("Response: ", resp)
                 console.log("Data: ", data)
-                console.log("Types (r,d respectively): ", typeof(resp), typeof(data))
                 setAuthTokens(data)
                 setUser(jwt_decode(data.access))
                 localStorage.setItem('authTokens', JSON.stringify(data))
@@ -86,11 +85,11 @@ export const AuthProvider = ({children}) => {
                 
             let data = await resp.json()
 
-            if(resp.status === 200) {
+            if(resp.status === 201) {
                 return {data: data, success: true}
             } else {
                 console.log("Big trouble")
-                return {status: resp.status, success: false, message: resp.message ? resp.message : resp.statusText}
+                return {status: resp.status, success: false, message: resp.message}
             }
         } catch(error) {
             console.log("Registration Error: ", error)

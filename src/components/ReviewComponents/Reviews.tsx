@@ -57,7 +57,7 @@ export default function Reviews(props: Props) {
         <div className='review'>
             {
                 user && !hasReviewed ?
-                <ReviewForm /> :
+                <ReviewForm setHasReviewed={setHasReviewed}  book_id={book_id}/> :
                 ""
 
             }

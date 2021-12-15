@@ -29,7 +29,7 @@ function AuthPage() {
         setPassword('')
         setPasswordConfirmation('')
         let regRes = await registerUser(username, password)
-        if(regRes.error) {return;}
+        if(regRes.error) {console.log('wtf is this', regRes); return;}
         if(regRes.success) {
             console.log(regRes)
             setHasAccount(true)
