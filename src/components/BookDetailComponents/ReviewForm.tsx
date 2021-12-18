@@ -26,8 +26,8 @@ export default function ReviewForm(props: Props) {
 
     return (
         <form action="submit" onSubmit={(e) => handleSubmit(e)} className='review_form'>
-            <input className='review_form_title' value={reviewTitle} type="text" name='reviewTitle' onChange={(e) => handleChange(e)} placeholder='Review Title' />
-            <textarea className='review_form_text' value={reviewText} name="reviewText"  onChange={(e) => handleChange(e)}></textarea>
+            <input className='review_form_title' value={reviewTitle} type="text" name='reviewTitle' onChange={(e) => handleChange(e)} placeholder='レビュータイトル' />
+            <textarea className='review_form_text' value={reviewText} name="reviewText"  onChange={(e) => handleChange(e)}　placeholder='レビュー文章'> </textarea>
             <button className='review_form_btn'>レビュー送信</button>
         </form>
     )

@@ -8,7 +8,6 @@ interface BookListProps {
 
 const BookList: React.FC<BookListProps> = (winprops: BookListProps) => {
 
-    console.log(winprops)
     return (
         <div data-testid="WinnerList" className="winnersDisp">
             <table>
@@ -21,8 +20,8 @@ const BookList: React.FC<BookListProps> = (winprops: BookListProps) => {
                 </tr>
                 
                 {
-                 winprops.winners.map( (win) => (
-                    <BookItem   
+                 winprops.winners.map( (win, i) => (
+                    <BookItem key={i}
                         {...win}
                     />  )
                  )

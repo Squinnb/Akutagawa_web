@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, memo } from 'react';
 import {Route, Switch} from "react-router-dom"
 import '../App.css';
 import '../nav.css';
@@ -15,7 +15,6 @@ import {Book} from './interfaces/baseInterface'
 const AkutagawaApp: React.FC = () => {
   const baseUrl = process.env.REACT_APP_BASE_URL
   const [books, setData] = useState<Book[] | null>(null)
-  let {user, logoutUser} = useContext(AuthContext)
   const fetchData = () => {
     fetch(`${baseUrl}book`)
     .then((res) => {
@@ -53,4 +52,4 @@ const AkutagawaApp: React.FC = () => {
   );
 }
 
-export default AkutagawaApp;
+export default memo(AkutagawaApp);

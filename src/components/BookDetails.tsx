@@ -1,8 +1,8 @@
 import React, { memo, useEffect } from 'react';
 import '../App.css';
 import '../details.css'
-import ReviewForm from './ReviewComponents/ReviewForm';
-import Reviews from './ReviewComponents/Reviews';
+import ReviewForm from './BookDetailComponents/ReviewForm';
+import Reviews from './BookDetailComponents/Reviews';
 import photo from "../bookPhotos/コンビニ人間.jpg"
 import {Book} from './interfaces/baseInterface'
 // import axios from "axios"
